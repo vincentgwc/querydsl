@@ -61,6 +61,8 @@ final class TypeResolver {
     }
 
     private static Type resolveVar(Type resolved, String varName, Type declaringType, EntityType context) {
+        // Trim empty spaces.
+        varName = varName != null ? varName.trim() : null;
         // get parameter index of var in declaring type
         int index = -1;
         for (int i = 0; i < declaringType.getParameters().size(); i++) {

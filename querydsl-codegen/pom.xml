@@ -15,6 +15,7 @@
   <description>codegen module for querydsl</description>
   <url>${project.homepage}</url>
   <packaging>jar</packaging>
+  <version>5.1.0-HOTFIX</version>
   
   <scm>
     <connection>${project.checkout}</connection>
@@ -26,7 +27,7 @@
     <dependency>
       <groupId>com.querydsl</groupId>
       <artifactId>querydsl-core</artifactId>
-      <version>${project.version}</version>
+      <version>${parent.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jetbrains</groupId>
@@ -36,7 +37,7 @@
     <dependency>
       <groupId>com.querydsl</groupId>
       <artifactId>codegen-utils</artifactId>
-      <version>${project.version}</version>
+      <version>${parent.version}</version>
     </dependency>
     <dependency>
       <groupId>javax.inject</groupId>
@@ -53,7 +54,7 @@
     <dependency>
       <groupId>com.querydsl</groupId>
       <artifactId>querydsl-core</artifactId>
-      <version>${project.version}</version>
+      <version>${parent.version}</version>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>    
